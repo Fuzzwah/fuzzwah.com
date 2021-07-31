@@ -1,1 +1,5 @@
 theme: jekyll-theme-slate
+title: Fuzzwah.com
+description: The homepage of a person who identifies as Fuzzwah
+github:
+  is_project_page: false
