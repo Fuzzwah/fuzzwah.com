@@ -2,8 +2,8 @@
 
 ### Links to my things:
 
-* [iRacing Stats Discord Bot](http://irstatsbot.fuzzwah.com/)
+* [iRacing Reports Discord Bot](https://discordbot.iracingreports.com/)
 * [iRacing Reports](http://iracingreports.com/)
-* Posts about sim racing: [Fuzzwah Racing](http://iracing.fuzzwah.com/)
-* My seldom updated blog: [Fuzzy's Logic](http://fuzzyslogic.blogspot.com/)
+* [Collection of recipes I like to cook and eat](https://recipes.fuzzwah.com/)
+* My (very) seldom updated blog: [Fuzzy's Logic](http://fuzzyslogic.blogspot.com/)
 
