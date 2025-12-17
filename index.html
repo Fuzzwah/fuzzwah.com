@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm Fuzzwah</title>
+    <style>
+        /* Modern Reset & Base Styles */
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-gradient-start: #f3f4f6;
+            --bg-gradient-end: #e5e7eb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            color: var(--text-main);
+        }
+
+        .subscribe-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            width: 100%;
+            max-width: 440px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        /* Profile Image Styles */
+        .profile-image-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem auto; /* Center horizontally, margin bottom */
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .profile-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            box-sizing: border-box; 
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        button {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            padding: 0.875rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Link to old stuff */
+        .links-link {
+            display: block;
+            margin-top: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+        
+        .links-link:hover {
+            color: var(--text-main);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="subscribe-card">
+        <div class="profile-image-container">
+            <img src="fuzzwah.jpg" alt="Fuzzwah">
+        </div>
+        
+        <h1>Miss me and my random thoughts?</h1>
+        
+        <p>
+            I’ll be sharing whatever is on my mind, or what I’ve been up to each time I realise I need to clip my finger nails.
+            <br><br>
+            I promise it’ll be more interesting than that bit of TMI.
+        </p>
+
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/fuzzwah"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/api/emails/embed-subscribe/fuzzwah', 'popupwindow')"
+          class="embeddable-buttondown-form"
+        >
+          <div class="form-group">
+            <label for="bd-email">Email Address</label>
+            <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
+          </div>
+          
+          <button type="submit">Subscribe</button>
+        </form>
+        <a href="/links.html" class="links-link">Looking for my links? →</a>
+    </div>
+
+</body>
+</html>
