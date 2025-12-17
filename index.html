@@ -159,14 +159,17 @@
           onsubmit="window.open('https://buttondown.com/api/emails/embed-subscribe/fuzzwah', 'popupwindow')"
           class="embeddable-buttondown-form"
         >
-          <div class="form-group">
-            <label for="bd-email">Email Address</label>
-            <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
-          </div>
+            <div class="form-group">
+                <label for="bd-name">Who are you?</label>
+                <input type="text" name="metadata__name" id="bd-name" placeholder="Name or Handle (optional)">
+            </div>        
+            <div class="form-group">
+                <label for="bd-email">Email Address</label>
+                <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
+            </div>
           
-          <button type="submit">Subscribe</button>
+            <button type="submit">Subscribe</button>
         </form>
-        <a href="/links.html" class="links-link">Looking for my links? →</a>
     </div>
 
 </body>
